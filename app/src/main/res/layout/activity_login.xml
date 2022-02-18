@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login.LoginActivity">
+
+        <ImageView
+            android:id="@+id/image_view_logo"
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/text_view_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_logo"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif"
+            android:text="Welcome To MediHouse"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_app"
+            android:text="Latest blogs for all Medical Profession."
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_info"
+            android:layout_margin="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Let's get Started"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_view_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/enter_phone_number"
+                android:textColor="@color/teal_200" />
+
+            <EditText
+                android:id="@+id/edit_text_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_view_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Error : Enter Valid Number"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/text_view_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_login"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="8dp"
+                android:text="CONTINUE"
+                android:textAlignment="center"
+                android:textColor="@color/color_light"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_no_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_view_no_sign_up"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Don't have an account yet?"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_view_no_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_view_version"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Register Now"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/text_view_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="Ver 1.0.0"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MediHouse</string>
+    <string name="enter_first_name">Enter First Name <font color='#F44336'>*</font></string>
+    <string name="enter_last_name">Enter Last Name <font color='#F44336'>*</font></string>
+    <string name="enter_phone_number">Enter Phone Number <font color='#F44336'>*</font></string>
+    <string name="email_optional">Email <font color='#6D0C81F1'>( optional )</font></string>
+</resources>
